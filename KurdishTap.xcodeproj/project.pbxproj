@@ -7,14 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9908CB271E6AD0C2008B98A4 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9908CB261E6AD0C2008B98A4 /* Key.swift */; };
 		99B3E8A21E6ACC6400A2454D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3E8A11E6ACC6400A2454D /* AppDelegate.swift */; };
 		99B3E8A41E6ACC6400A2454D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3E8A31E6ACC6400A2454D /* ViewController.swift */; };
 		99B3E8A71E6ACC6400A2454D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B3E8A51E6ACC6400A2454D /* Main.storyboard */; };
 		99B3E8A91E6ACC6400A2454D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B3E8A81E6ACC6400A2454D /* Assets.xcassets */; };
 		99B3E8AC1E6ACC6400A2454D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B3E8AA1E6ACC6400A2454D /* LaunchScreen.storyboard */; };
+		99B3E8BA1E6ACDBF00A2454D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B3E8B91E6ACDBF00A2454D /* KeyboardViewController.swift */; };
+		99B3E8BE1E6ACDBF00A2454D /* Kurdish.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99B3E8B71E6ACDBF00A2454D /* Kurdish.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B894754FB31070F433203606 /* Pods_KurdishTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F5B470ADBD07B4DA6DD5A /* Pods_KurdishTap.framework */; };
+		FD626247334C1E13A60E0B0C /* Pods_Kurdish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A740B242443025DB76116A /* Pods_Kurdish.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		99B3E8BC1E6ACDBF00A2454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B3E8961E6ACC6400A2454D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B3E8B61E6ACDBF00A2454D;
+			remoteInfo = Kurdish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99B3E8C21E6ACDBF00A2454D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99B3E8BE1E6ACDBF00A2454D /* Kurdish.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		12505BA52508F749D215B017 /* Pods-KurdishTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurdishTap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KurdishTap/Pods-KurdishTap.debug.xcconfig"; sourceTree = "<group>"; };
+		437F5B470ADBD07B4DA6DD5A /* Pods_KurdishTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KurdishTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66033292BC49C0122C5FF517 /* Pods-Kurdish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kurdish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kurdish/Pods-Kurdish.debug.xcconfig"; sourceTree = "<group>"; };
+		9908CB261E6AD0C2008B98A4 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		99B3E89E1E6ACC6400A2454D /* KurdishTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KurdishTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B3E8A11E6ACC6400A2454D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99B3E8A31E6ACC6400A2454D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +55,12 @@
 		99B3E8A81E6ACC6400A2454D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99B3E8AB1E6ACC6400A2454D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99B3E8AD1E6ACC6400A2454D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B3E8B71E6ACDBF00A2454D /* Kurdish.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Kurdish.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B3E8B91E6ACDBF00A2454D /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		99B3E8BB1E6ACDBF00A2454D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB16C95AED5B4C7DDE5C1918 /* Pods-Kurdish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kurdish.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kurdish/Pods-Kurdish.release.xcconfig"; sourceTree = "<group>"; };
+		C0A740B242443025DB76116A /* Pods_Kurdish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kurdish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2380B23046F697994E061A3 /* Pods-KurdishTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KurdishTap.release.xcconfig"; path = "Pods/Target Support Files/Pods-KurdishTap/Pods-KurdishTap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +68,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B894754FB31070F433203606 /* Pods_KurdishTap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B3E8B41E6ACDBF00A2454D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD626247334C1E13A60E0B0C /* Pods_Kurdish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		404E82781611308370709B0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A740B242443025DB76116A /* Pods_Kurdish.framework */,
+				437F5B470ADBD07B4DA6DD5A /* Pods_KurdishTap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99B3E8951E6ACC6400A2454D = {
 			isa = PBXGroup;
 			children = (
 				99B3E8A01E6ACC6400A2454D /* KurdishTap */,
+				99B3E8B81E6ACDBF00A2454D /* Kurdish */,
 				99B3E89F1E6ACC6400A2454D /* Products */,
+				D2E7C90F152B03267F1ABFCD /* Pods */,
+				404E82781611308370709B0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				99B3E89E1E6ACC6400A2454D /* KurdishTap.app */,
+				99B3E8B71E6ACDBF00A2454D /* Kurdish.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +125,27 @@
 			path = KurdishTap;
 			sourceTree = "<group>";
 		};
+		99B3E8B81E6ACDBF00A2454D /* Kurdish */ = {
+			isa = PBXGroup;
+			children = (
+				99B3E8B91E6ACDBF00A2454D /* KeyboardViewController.swift */,
+				9908CB261E6AD0C2008B98A4 /* Key.swift */,
+				99B3E8BB1E6ACDBF00A2454D /* Info.plist */,
+			);
+			path = Kurdish;
+			sourceTree = "<group>";
+		};
+		D2E7C90F152B03267F1ABFCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66033292BC49C0122C5FF517 /* Pods-Kurdish.debug.xcconfig */,
+				AB16C95AED5B4C7DDE5C1918 /* Pods-Kurdish.release.xcconfig */,
+				12505BA52508F749D215B017 /* Pods-KurdishTap.debug.xcconfig */,
+				E2380B23046F697994E061A3 /* Pods-KurdishTap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +153,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B3E8B01E6ACC6400A2454D /* Build configuration list for PBXNativeTarget "KurdishTap" */;
 			buildPhases = (
+				93E8A53A2F560D175411DF78 /* [CP] Check Pods Manifest.lock */,
 				99B3E89A1E6ACC6400A2454D /* Sources */,
 				99B3E89B1E6ACC6400A2454D /* Frameworks */,
 				99B3E89C1E6ACC6400A2454D /* Resources */,
+				99B3E8C21E6ACDBF00A2454D /* Embed App Extensions */,
+				68256B031B55BDFF287C84BF /* [CP] Embed Pods Frameworks */,
+				2CFB846A2CD326255D63EFB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				99B3E8BD1E6ACDBF00A2454D /* PBXTargetDependency */,
 			);
 			name = KurdishTap;
 			productName = KurdishTap;
 			productReference = 99B3E89E1E6ACC6400A2454D /* KurdishTap.app */;
 			productType = "com.apple.product-type.application";
+		};
+		99B3E8B61E6ACDBF00A2454D /* Kurdish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B3E8BF1E6ACDBF00A2454D /* Build configuration list for PBXNativeTarget "Kurdish" */;
+			buildPhases = (
+				4C61B0B73002CA0198501288 /* [CP] Check Pods Manifest.lock */,
+				99B3E8B31E6ACDBF00A2454D /* Sources */,
+				99B3E8B41E6ACDBF00A2454D /* Frameworks */,
+				99B3E8B51E6ACDBF00A2454D /* Resources */,
+				6A84CDF9BC47B8D76D742194 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kurdish;
+			productName = Kurdish;
+			productReference = 99B3E8B71E6ACDBF00A2454D /* Kurdish.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +201,11 @@
 				ORGANIZATIONNAME = "Sallar Kaboli";
 				TargetAttributes = {
 					99B3E89D1E6ACC6400A2454D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T73DCRT9J5;
+						ProvisioningStyle = Automatic;
+					};
+					99B3E8B61E6ACDBF00A2454D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T73DCRT9J5;
 						ProvisioningStyle = Automatic;
@@ -115,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				99B3E89D1E6ACC6400A2454D /* KurdishTap */,
+				99B3E8B61E6ACDBF00A2454D /* Kurdish */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +242,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99B3E8B51E6ACDBF00A2454D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CFB846A2CD326255D63EFB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KurdishTap/Pods-KurdishTap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C61B0B73002CA0198501288 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68256B031B55BDFF287C84BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KurdishTap/Pods-KurdishTap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A84CDF9BC47B8D76D742194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kurdish/Pods-Kurdish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E8A53A2F560D175411DF78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99B3E89A1E6ACC6400A2454D /* Sources */ = {
@@ -142,7 +339,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99B3E8B31E6ACDBF00A2454D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B3E8BA1E6ACDBF00A2454D /* KeyboardViewController.swift in Sources */,
+				9908CB271E6AD0C2008B98A4 /* Key.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99B3E8BD1E6ACDBF00A2454D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99B3E8B61E6ACDBF00A2454D /* Kurdish */;
+			targetProxy = 99B3E8BC1E6ACDBF00A2454D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		99B3E8A51E6ACC6400A2454D /* Main.storyboard */ = {
@@ -259,7 +473,9 @@
 		};
 		99B3E8B11E6ACC6400A2454D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12505BA52508F749D215B017 /* Pods-KurdishTap.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T73DCRT9J5;
 				INFOPLIST_FILE = KurdishTap/Info.plist;
@@ -272,13 +488,43 @@
 		};
 		99B3E8B21E6ACC6400A2454D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2380B23046F697994E061A3 /* Pods-KurdishTap.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T73DCRT9J5;
 				INFOPLIST_FILE = KurdishTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sallar.KurdishTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		99B3E8C01E6ACDBF00A2454D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66033292BC49C0122C5FF517 /* Pods-Kurdish.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T73DCRT9J5;
+				INFOPLIST_FILE = Kurdish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sallar.KurdishTap.Kurdish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99B3E8C11E6ACDBF00A2454D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB16C95AED5B4C7DDE5C1918 /* Pods-Kurdish.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T73DCRT9J5;
+				INFOPLIST_FILE = Kurdish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sallar.KurdishTap.Kurdish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +548,16 @@
 				99B3E8B21E6ACC6400A2454D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B3E8BF1E6ACDBF00A2454D /* Build configuration list for PBXNativeTarget "Kurdish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B3E8C01E6ACDBF00A2454D /* Debug */,
+				99B3E8C11E6ACDBF00A2454D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
