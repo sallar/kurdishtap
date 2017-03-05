@@ -23,63 +23,176 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        let row1 = [
+        let allRows = [
             [
-                "title": "چ",
-                "action": "write",
-                "value": "چ"
+                [
+                    "title": "چ",
+                    "action": "write",
+                    "value": "چ"
+                ],
+                [
+                    "title": "ص",
+                    "action": "write",
+                    "value": "ص"
+                ],
+                [
+                    "title": "پ",
+                    "action": "write",
+                    "value": "پ"
+                ],
+                [
+                    "title": "ق",
+                    "action": "write",
+                    "value": "ق"
+                ],
+                [
+                    "title": "ف",
+                    "action": "write",
+                    "value": "ف"
+                ],
+                [
+                    "title": "غ",
+                    "action": "write",
+                    "value": "غ"
+                ],
+                [
+                    "title": "ع",
+                    "action": "write",
+                    "value": "ع"
+                ],
+                [
+                    "title": "ﮪ",
+                    "action": "write",
+                    "value": "ﮪ"
+                ],
+                [
+                    "title": "خ",
+                    "action": "write",
+                    "value": "خ"
+                ],
+                [
+                    "title": "ح",
+                    "action": "write",
+                    "value": "ح"
+                ]
             ],
             [
-                "title": "ص",
-                "action": "write",
-                "value": "ص"
+                [
+                    "title": "ش",
+                    "action": "write",
+                    "value": "ش"
+                ],
+                [
+                    "title": "س",
+                    "action": "write",
+                    "value": "س"
+                ],
+                [
+                    "title": "ی",
+                    "action": "write",
+                    "value": "ی"
+                ],
+                [
+                    "title": "ب",
+                    "action": "write",
+                    "value": "ب"
+                ],
+                [
+                    "title": "ل",
+                    "action": "write",
+                    "value": "ل"
+                ],
+                [
+                    "title": "ا",
+                    "action": "write",
+                    "value": "ا"
+                ],
+                [
+                    "title": "ت",
+                    "action": "write",
+                    "value": "ت"
+                ],
+                [
+                    "title": "ن",
+                    "action": "write",
+                    "value": "ن"
+                ],
+                [
+                    "title": "م",
+                    "action": "write",
+                    "value": "م"
+                ]
             ],
             [
-                "title": "پ",
-                "action": "write",
-                "value": "پ"
+                [
+                    "title": "🔝",
+                    "action": "write",
+                    "value": ""
+                ],
+                [
+                    "title": "ئ",
+                    "action": "write",
+                    "value": "ئ"
+                ],
+                [
+                    "title": "د",
+                    "action": "write",
+                    "value": "د"
+                ],
+                [
+                    "title": "ﯙ",
+                    "action": "write",
+                    "value": "ﯙ"
+                ],
+                [
+                    "title": "ر",
+                    "action": "write",
+                    "value": "ر"
+                ],
+                [
+                    "title": "ز",
+                    "action": "write",
+                    "value": "ز"
+                ],
+                [
+                    "title": "ژ",
+                    "action": "write",
+                    "value": "ژ"
+                ],
+                [
+                    "title": "ه",
+                    "action": "write",
+                    "value": "ه"
+                ],
+                [
+                    "title": "🔙",
+                    "action": "write",
+                    "value": ""
+                ]
             ],
             [
-                "title": "ق",
-                "action": "write",
-                "value": "ق"
-            ],
-            [
-                "title": "ف",
-                "action": "write",
-                "value": "ف"
-            ],
-            [
-                "title": "غ",
-                "action": "write",
-                "value": "غ"
-            ],
-            [
-                "title": "ع",
-                "action": "write",
-                "value": "ع"
-            ],
-            [
-                "title": "ﮪ",
-                "action": "write",
-                "value": "ﮪ"
-            ],
-            [
-                "title": "خ",
-                "action": "write",
-                "value": "خ"
-            ],
-            [
-                "title": "ح",
-                "action": "write",
-                "value": "ح"
+                [
+                    "title": "🔢",
+                    "action": "write",
+                    "value": ""
+                ],
+                [
+                    "title": "🌎",
+                    "action": "write",
+                    "value": ""
+                ],
+                [
+                    "title": "   بﯙشایی   ",
+                    "action": "write",
+                    "value": " "
+                ],
+                [
+                    "title": "↙️",
+                    "action": "write",
+                    "value": ""
+                ]
             ]
-        ];
-        
-        let allRows = [row1, row1, row1]
-        
+        ]
         
         let rows = allRows.map { (row) -> Row in
             return Row(keys: row.map({ (key) -> Key in
