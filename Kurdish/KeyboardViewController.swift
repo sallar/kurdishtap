@@ -196,7 +196,7 @@ class KeyboardViewController: UIInputViewController {
         
         let rows = allRows.map { (row) -> Row in
             return Row(keys: row.map({ (key) -> Key in
-                return Key(title: key["title"]!, action: key["action"]!, value: key["value"]!)
+                return Key(title: key["title"]!, action: key["action"]!, value: key["value"]!, proxy: self.textDocumentProxy)
             }))
         }
 

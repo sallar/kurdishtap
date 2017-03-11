@@ -22,9 +22,8 @@ class RowManager: ASDisplayNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let stack = ASStackLayoutSpec(direction: .vertical, spacing: 0, justifyContent: .start, alignItems: .stretch, children: rows)
-        
-        let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), child: stack)
+        let stack = ASStackLayoutSpec(direction: .vertical, spacing: 5, justifyContent: .start, alignItems: .stretch, children: rows)
+        let inset = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5), child: stack)
         return inset
     }
 }
@@ -44,7 +43,7 @@ class Row: ASDisplayNode {
      }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let stack = ASStackLayoutSpec(direction: .horizontal, spacing: 0, justifyContent: .start, alignItems: .stretch, children: keys)
+        let stack = ASStackLayoutSpec(direction: .horizontal, spacing: 5, justifyContent: .center, alignItems: .stretch, children: keys)
         return stack
     }
 }
@@ -60,24 +59,36 @@ class Key: ASDisplayNode {
     let button = ASButtonNode()
     let defaultColor = UIColor.white
     var value = ""
+    var proxy: UITextDocumentProxy?
     
-    init(title: String, action: String, value: String) {
+    init(title: String, action: String, value: String, proxy: UITextDocumentProxy) {
         super.init()
         
         self.value = value
         self.style.flexShrink = 1
         self.style.flexGrow = 1
         
-        addSubnode(button)
+        button.layer.cornerRadius = 5
+        button.layer.shadowColor = UIColor(red:0.54, green:0.55, blue:0.56, alpha:1.00).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 1)
+        button.layer.shadowOpacity = 1
+        button.layer.shadowRadius = 0
+        button.layer.masksToBounds = false
+        button.backgroundColor = defaultColor
+        
+        self.proxy = proxy
+        
         button.setTitle(title, with: UIFont.boldSystemFont(ofSize: 12), with: UIColor.black, for: [])
         button.addTarget(self, action: #selector(Key.tap), forControlEvents: [.touchDownRepeat, .touchDown])
         button.addTarget(self, action: #selector(Key.clear), forControlEvents: [.touchUpInside, .touchCancel])
-        button.backgroundColor = defaultColor
+        
+        addSubnode(button)
     }
     
     func tap() {
         button.backgroundColor = UIColor.brown
-        (self.view.next?.next?.next?.next as! KeyboardViewController).insertText(text: self.value)
+        // (self.view.next?.next?.next?.next as! KeyboardViewController).insertText(text: self.value)
+        self.proxy?.insertText(self.value)
     }
     
     func clear() {
@@ -85,7 +96,7 @@ class Key: ASDisplayNode {
     }
     
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
-        let layoutSpec = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2), child: button)
+        let layoutSpec = ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), child: button)
         return layoutSpec
     }
 }
