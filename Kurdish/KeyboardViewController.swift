@@ -9,7 +9,7 @@
 import UIKit
 import AsyncDisplayKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController, KeyDelegate {
     
     @IBOutlet var nextKeyboardButton: UIButton!
     var rowNode: RowManager!
@@ -196,7 +196,9 @@ class KeyboardViewController: UIInputViewController {
         
         let rows = allRows.map { (row) -> Row in
             return Row(keys: row.map({ (key) -> Key in
-                return Key(title: key["title"]!, action: key["action"]!, value: key["value"]!, proxy: self.textDocumentProxy)
+                let key = Key(title: key["title"]!, action: key["action"]!, value: key["value"]!)
+                key.delegate = self
+                return key
             }))
         }
 
@@ -208,8 +210,8 @@ class KeyboardViewController: UIInputViewController {
                 
     }
     
-    func insertText(text: String) {
-        self.textDocumentProxy.insertText(text)
+    func keyInsert(toInsert: String) {
+        self.textDocumentProxy.insertText(toInsert)
     }
     
     override func didReceiveMemoryWarning() {

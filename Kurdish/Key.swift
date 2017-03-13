@@ -48,6 +48,10 @@ class Row: ASDisplayNode {
     }
 }
 
+protocol KeyDelegate: class {
+    func keyInsert(toInsert: String)
+}
+
 class Key: ASDisplayNode {
     
     enum Actions {
@@ -59,9 +63,9 @@ class Key: ASDisplayNode {
     let button = ASButtonNode()
     let defaultColor = UIColor.white
     var value = ""
-    var proxy: UITextDocumentProxy?
-    
-    init(title: String, action: String, value: String, proxy: UITextDocumentProxy) {
+    weak var delegate:KeyDelegate?
+
+    init(title: String, action: String, value: String) {
         super.init()
         
         self.value = value
@@ -76,8 +80,6 @@ class Key: ASDisplayNode {
         button.layer.masksToBounds = false
         button.backgroundColor = defaultColor
         
-        self.proxy = proxy
-        
         button.setTitle(title, with: UIFont.boldSystemFont(ofSize: 12), with: UIColor.black, for: [])
         button.addTarget(self, action: #selector(Key.tap), forControlEvents: [.touchDownRepeat, .touchDown])
         button.addTarget(self, action: #selector(Key.clear), forControlEvents: [.touchUpInside, .touchCancel])
@@ -88,7 +90,7 @@ class Key: ASDisplayNode {
     func tap() {
         button.backgroundColor = UIColor.brown
         // (self.view.next?.next?.next?.next as! KeyboardViewController).insertText(text: self.value)
-        self.proxy?.insertText(self.value)
+        self.delegate?.keyInsert(toInsert: self.value)
     }
     
     func clear() {
